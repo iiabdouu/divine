@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Abdou</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">divine</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="Divine1.html">Happy</a></li>
+							<li><a href="Divine2.html">Sad</a></li>
+							<li><a href="Divine3.html">Angry</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+				<div class="container">
+					<h1>Click here Divine and dont drink alcohol again ok? ⬇</h1>
+					<button onclick="generateRandomText()">HERE</button>
+					<div id="outputContainer" class="output-container">
+						
+					</div>
+				<script>
+					
+					const texts = [
+						"The world is better because you are in it",
+						"I admire your ability to always… (stay optimistic, keep persevering, speak openly about what you’re going through, etc.)",
+						"I know you’re hurting — and that’s valid. I’m here to listen or help in any way I can",
+						"Even the worst days are just 24 hours; there is hope for tomorrow",
+						"If all you did today was wake up, that’s enough, and I’m proud of you",
+						"Think about how far you’ve come. Take a minute to celebrate that",
+						"Even in the moments that you don’t believe in yourself, remember that I always do",
+						"Don’t forget to be kind to yourself; you deserve it",
+						"I see you, I celebrate you, and I hold space for you.",
+						"Please don’t forget to take care of yourself",
+						"Call me if you need to talk, but I’m also happy to come be with you in person",
+						"You’ve always helped me through a hard time, and we’ll get through this one together, too",
+						
+					];
+			
+					function generateRandomText() {
+						
+						const randomIndex = Math.floor(Math.random() * texts.length);
+						const randomText = texts[randomIndex];
+			
+						
+						const outputContainer = document.getElementById("outputContainer");
+						
+						
+						outputContainer.innerHTML = `<p>${randomText}</p>`;
+					}
+				</script>
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

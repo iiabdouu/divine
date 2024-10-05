@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Abdou</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">divine</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="Divine1.html">Happy</a></li>
+							<li><a href="Divine2.html">Sad</a></li>
+							<li><a href="Divine3.html">Angry</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+				<div class="container">
+					<h1>Click here Divine and dont drink alcohol again ok? ⬇</h1>
+					<button onclick="generateRandomText()">HERE</button>
+					<div id="outputContainer" class="output-container">
+						
+					</div>
+				<script>
+					
+					const texts = [
+				    "im sad hurt angry,mad a,d disappointed but you know what iwill put on a smile and move on it will hurt but iwill survive",
+					"Friendship is all about trusting each other, helping each other, loving each other and being crazy together",
+					"Just because we don't talk anymore, doesn't mean I've forgotten about you, it doesn't mean that I no longer care. Truth is I still do. I do my best to check up on you, to see how you're doing. To see if you're okay, but every time I get the urge to talk to you, it suddenly hits me that we're strangers you don't want me in your life, hence the reason I'm no longer a part of you. But even though everything's changed, I just want you to know that I'm still here. I'll still be here for you, I'll still lend you my shoulders and ears. I don't care what time it is, what I'm doing. Don't hesitate to talk to me, because half the time I wish that you were talking to me. I just miss your presence, I miss you being my best friend",
+					"And I'm still getting over my past... but I will tell you this your friendship has made it a lot easier for me to move on and I'm grateful for what we have. So thank you for everything",
+					"Life is kind of like a party. You invite a lot of people, some leave early, some stay all night, some laugh with you, some laugh at you, and some show up late",
+					"The true meaning of friendship is being able to express yourself and not having to explain it to the other person",
+					"I'm not a perfect person, I make a lot of mistakes, but still, I love those people who stay with me after knowing how I really am",
+					"There are friends, there is family, and then there are friends that become family",
+					"Because of you, I laugh a little harder, cry a little less, and smile a lot more",
+					"Your friendship means the world to me. Just wanted to let you know",
+					];
+			
+					function generateRandomText() {
+						
+						const randomIndex = Math.floor(Math.random() * texts.length);
+						const randomText = texts[randomIndex];
+			
+						
+						const outputContainer = document.getElementById("outputContainer");
+						
+						
+						outputContainer.innerHTML = `<p>${randomText}</p>`;
+					}
+				</script>
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Abdou</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">divine</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="Divine1.html">Happy</a></li>
+							<li><a href="Divine2.html">Sad</a></li>
+							<li><a href="Divine3.html">Angry</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+				<div class="container">
+					<h1>Click here Divine and dont drink alcohol again ok? ⬇</h1>
+					<button onclick="generateRandomText()">HERE</button>
+					<div id="outputContainer" class="output-container">
+						
+					</div>
+				<script>
+					
+					const texts = [
+						"There’s not a word yet for old friends who’ve just me",
+						"A single rose can be my garden…a single friend, my world",
+						"Friendship is the only cement that will ever hold the world together",
+						"Friends are those rare people who ask how we are and then wait to hear the answer",
+						"It’s the friends you can call up at 4 a.m. that matter",
+						"A good friend is like a four-leaf clover; hard to find and lucky to have",
+						"True friends are never apart, maybe in distance but never in heart",
+						"There is nothing on this earth more to be prized than true friendship",
+						"A sweet friendship refreshes the soul",
+						"A true friend never gets in your way unless you happen to be going down",
+						"I think we’ll be friends forever because we’re too lazy to find new friends",
+						"When it hurts to look back and you’re afraid to look ahead, you can look beside you and your best friend will be there",
+						"Everyone hears what you say. Friends listen to what you say. Best friends listen to what you don’t say",
+						
+,						
+					];
+			
+					function generateRandomText() {
+						
+						const randomIndex = Math.floor(Math.random() * texts.length);
+						const randomText = texts[randomIndex];
+			
+						
+						const outputContainer = document.getElementById("outputContainer");
+						
+						
+						outputContainer.innerHTML = `<p>${randomText}</p>`;
+					}
+				</script>
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
